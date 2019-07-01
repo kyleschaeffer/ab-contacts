@@ -95,6 +95,35 @@ figure {
   }
 }
 
+/* Title bar */
+.title-bar {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: var(--gutter);
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.title-btn {
+  vertical-align: middle;
+}
+
+.title-bar-actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+@media only screen and (min-width: 480px) {
+  .title-bar-actions {
+    margin-left: auto;
+    width: auto;
+  }
+}
+
 /* Screen readers only */
 .sr-only {
   border: 0;
