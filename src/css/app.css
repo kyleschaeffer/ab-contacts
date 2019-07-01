@@ -307,6 +307,10 @@ i + .btn-label {
 }
 
 /* Contact details */
+.contact-details {
+  animation: expand-in var(--t-overt) ease;
+}
+
 .contact-details:not(.is-active) {
   display: none;
 }
@@ -326,6 +330,28 @@ i + .btn-label {
   position: absolute;
   top: .25em;
   left: 0;
+}
+
+/* Contact details entry */
+@keyframes expand-in {
+  0% {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  100% {
+    max-height: 122px;
+    overflow: hidden;
+  }
+}
+
+/* Spinners */
+.spinner {
+  transition: transform var(--t-normal) ease;
+}
+
+[aria-expanded="true"] .spinner {
+  transform: rotate(180deg);
 }
 
 /* Screen readers only */
