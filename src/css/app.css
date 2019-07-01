@@ -35,11 +35,9 @@
   --t-normal: .3s;
   --t-overt: .4s;
 
-  /* Screen sizes */
-  --screen-sm: 480px;
-  --screen-md: 768px;
-  --screen-lg: 1024px;
-  --screen-xl: 1400px;
+  /* Layout */
+  --gutter: 20px;
+  --container-lg: 940px;
 }
 
 /* Box sizing */
@@ -82,6 +80,19 @@ h6 {
 p,
 figure {
   margin: 0;
+}
+
+/* Page */
+.page {
+  padding: var(--gutter);
+}
+
+@media only screen and (min-width: 1024px) {
+  .page {
+    max-width: var(--container-lg);
+    margin: var(--gutter) auto;
+    padding: 0;
+  }
 }
 
 /* Screen readers only */
