@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contacts &mdash; Action Builder</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.typekit.net/xys8vvx.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/app.js" defer></script>
+  <script src="https://kit.fontawesome.com/0ae1093d1d.js" defer></script>
+</head>
+<body>
+
+  <section class="page">
+    <!-- Title bar -->
+    <header class="title-bar" role="banner">
+      <h1 class="title">4 People</h1>
+
+      <div class="btn-group">
+        <button class="btn btn-sm">
+          <i class="fas fa-file-download" aria-hidden="true"></i>
+          Export
+        </button>
+      </div>
+
+      <div class="title-bar-actions">
+        <div class="btn-group">
+          <button class="btn">
+            <i class="fas fa-sort-alpha-up" aria-hidden="true"></i>
+            Last Name
+          </button>
+        </div>
+        <div class="btn-group">
+          <button class="btn is-primary">
+            <i class="fas fa-list-ul" aria-hidden="true"></i>
+            <span class="sr-only">List view</span>
+          </button>
+          <button class="btn is-subtle">
+            <i class="far fa-chart-bar" aria-hidden="true"></i>
+            <span class="sr-only">Chart view</span>
+          </button>
+          <button class="btn is-subtle">
+            <i class="far fa-map" aria-hidden="true"></i>
+            <span class="sr-only">Map view</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contacts list -->
+    <main class="media-list" role="main">
+      <!-- Jake -->
+      <article class="media">
+        <figure class="media-thumb">
+          <span class="initials">JC</span>
+        </figure>
+        <section class="media-content">
+          <h2 class="media-title">Jake Caputo</h2>
+          <p class="media-subtitle">Redondo Beach, CA</p>
+        </section>
+        <footer class="media-actions">
+          <div class="btn-group">
+            <button class="btn is-primary">
+              <i class="far fa-envelope" aria-hidden="true"></i>
+              <span class="sr-only">Email Jake</span>
+            </button>
+            <button class="btn is-primary">
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <span class="sr-only">Call Jake</span>
+            </button>
+            <button class="btn" disabled>
+              <i class="far fa-comment-alt" aria-hidden="true"></i>
+              <span class="sr-only">Chat with Jake</span>
+            </button>
+            <button class="btn is-primary">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span class="sr-only">Find Jake in Maps</span>
+            </button>
+          </div>
+          <div class="btn-group">
+            <button class="btn">
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              <span class="sr-only">Toggle details</span>
+            </button>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Martha -->
+      <article class="media">
+        <figure class="media-thumb">
+          <span class="initials">MG</span>
+        </figure>
+        <section class="media-content">
+          <h2 class="media-title">Martha Grant</h2>
+          <p class="media-subtitle">Henderson, TX</p>
+        </section>
+        <footer class="media-actions">
+          <div class="btn-group">
+            <button class="btn" disabled>
+              <i class="far fa-envelope" aria-hidden="true"></i>
+              <span class="sr-only">Email Martha</span>
+            </button>
+            <button class="btn is-primary">
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <span class="sr-only">Call Martha</span>
+            </button>
+            <button class="btn is-primary" disabled>
+              <i class="far fa-comment-alt" aria-hidden="true"></i>
+              <span class="sr-only">Chat with Martha</span>
+            </button>
+            <button class="btn is-primary">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span class="sr-only">Find Martha in Maps</span>
+            </button>
+          </div>
+          <div class="btn-group">
+            <button class="btn">
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              <span class="sr-only">Toggle details</span>
+            </button>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Barbara -->
+      <article class="media">
+        <figure class="media-thumb">
+          <span class="initials">BG</span>
+        </figure>
+        <section class="media-content">
+          <h2 class="media-title">Barbara Glaser</h2>
+        </section>
+        <footer class="media-actions">
+          <div class="btn-group">
+            <button class="btn is-primary">
+              <i class="far fa-envelope" aria-hidden="true"></i>
+              <span class="sr-only">Email Barbara</span>
+            </button>
+            <button class="btn is-primary">
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <span class="sr-only">Call Barbara</span>
+            </button>
+            <button class="btn" disabled>
+              <i class="far fa-comment-alt" aria-hidden="true"></i>
+              <span class="sr-only">Chat with Barbara</span>
+            </button>
+            <button class="btn" disabled>
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span class="sr-only">Find Barbara in Maps</span>
+            </button>
+          </div>
+          <div class="btn-group">
+            <button class="btn">
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              <span class="sr-only">Toggle details</span>
+            </button>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Anjuli -->
+      <article class="media">
+        <figure class="media-thumb is-success">
+          <span class="initials">AC</span>
+        </figure>
+        <section class="media-content">
+          <h2 class="media-title">Anjuli Cameron</h2>
+          <p class="media-subtitle">Washington, DC</p>
+        </section>
+        <footer class="media-actions">
+          <div class="btn-group">
+            <button class="btn is-primary">
+              <i class="far fa-envelope" aria-hidden="true"></i>
+              <span class="sr-only">Email Anjuli</span>
+            </button>
+            <button class="btn is-primary">
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <span class="sr-only">Call Anjuli</span>
+            </button>
+            <button class="btn" disabled>
+              <i class="far fa-comment-alt" aria-hidden="true"></i>
+              <span class="sr-only">Chat with Anjuli</span>
+            </button>
+            <button class="btn" disabled>
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span class="sr-only">Find Anjuli in Maps</span>
+            </button>
+          </div>
+          <div class="btn-group">
+            <button class="btn">
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              <span class="sr-only">Toggle details</span>
+            </button>
+          </div>
+        </footer>
+      </article>
+    </main>
+  </section>
+
+</body>
+</html>

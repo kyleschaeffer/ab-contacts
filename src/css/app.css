@@ -1,0 +1,98 @@
+/* Variables */
+:root {
+  /* Color: grayscale */
+  --c-darkest: #202634;
+  --c-darker: #485063;
+  --c-dark: #82899e;
+  --c-medium: #c2c9db;
+  --c-light: #dce0ec;
+  --c-lighter: #eaeef6;
+  --c-lightest: #fff;
+
+  /* Color: theme */
+  --c-primary: #045dfa;
+  --c-success: #00b241;
+
+  /* Typefaces */
+  --f-base: proxima-nova, sans-serif;
+
+  /* Sizes */
+  --f-size: 16px;
+
+  /* Font weights */
+  --w-light: 300;
+  --w-normal: 400;
+  --w-semi: 600;
+  --w-bold: 700;
+
+  /* Line heights */
+  --h-compact: 1.2;
+  --h-normal: 1.4;
+  --h-expanded: 1.6;
+
+  /* Motion */
+  --t-subtle: .2s;
+  --t-normal: .3s;
+  --t-overt: .4s;
+
+  /* Screen sizes */
+  --screen-sm: 480px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1400px;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Base typography */
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: var(--c-lighter);
+  color: var(--c-darker);
+  font-family: var(--f-base);
+  font-size: var(--f-size);
+  font-weight: var(--w-normal);
+  line-height: var(--h-normal);
+  margin: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--c-darkest);
+  line-height: var(--h-compact);
+  margin: 0;
+}
+
+/* Blocks */
+p,
+figure {
+  margin: 0;
+}
+
+/* Screen readers only */
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

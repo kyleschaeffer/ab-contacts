@@ -1,0 +1,9 @@
+{
+  "name": "action-builder",
+  "version": "1.0.0",
+  "description": "Action Builder contacts exercise.",
+  "author": "@kyleschaeffer",
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
