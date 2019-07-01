@@ -34,6 +34,9 @@
   /* Style */
   --radius: 4px;
 
+  /* Buttons */
+  --btn-size: 44px;
+
   /* Motion */
   --t-subtle: .2s;
   --t-normal: .3s;
@@ -86,6 +89,11 @@ figure {
   margin: 0;
 }
 
+/* Text color */
+.is-subtle {
+  color: var(--c-medium);
+}
+
 /* Page */
 .page {
   padding: var(--gutter);
@@ -121,7 +129,7 @@ figure {
   width: 100%;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 768px) {
   .title-bar-actions {
     margin-left: auto;
     width: auto;
@@ -195,7 +203,7 @@ figure {
   width: 100%;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 768px) {
   .media-content {
     flex-grow: 1;
   }
@@ -204,6 +212,86 @@ figure {
     margin: 0;
     width: auto;
   }
+}
+
+/* Buttons */
+.btn {
+  background: var(--c-lightest);
+  border-radius: var(--radius);
+  border: 1px solid var(--c-light);
+  color: var(--c-darkest);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  height: var(--btn-size);
+  line-height: var(--btn-size);
+  padding: 0 0.75em;
+  transition: border-color var(--t-subtle) ease, color var(--t-subtle) ease;
+}
+
+.btn.is-sm {
+  line-height: calc(var(--btn-size) / 2);
+  height: calc(var(--btn-size) / 2);
+  font-size: 0.875rem;
+  padding: 0 0.5em;
+}
+
+.btn.is-primary {
+  color: var(--c-primary);
+  font-weight: var(--w-semi);
+}
+
+.btn.is-primary:focus,
+.btn.is-primary:hover {
+  color: var(--c-darkest);
+}
+
+.btn.is-subtle {
+  color: var(--c-medium);
+}
+
+.btn:focus,
+.btn:hover {
+  border-color: var(--c-medium);
+  color: var(--c-primary);
+}
+
+.btn[disabled] {
+  color: var(--c-light);
+  cursor: auto;
+}
+
+.btn[disabled]:focus,
+.btn[disabled]:hover {
+  border-color: var(--c-light);
+  color: var(--c-light);
+}
+
+i + .btn-label {
+  margin-left: 0.25em;
+}
+
+/* Button groups */
+.btn-group {
+  background: var(--c-lightest);
+  border: 1px solid var(--c-light);
+  border-radius: var(--radius);
+  display: flex;
+  padding: 0 0.25em;
+}
+
+.btn-group.is-not-outlined {
+  border: 0;
+}
+
+.btn-group + .btn-group {
+  margin-left: calc(var(--gutter) / 2);
+}
+
+.btn-group .btn {
+  background-color: transparent;
+  border: 0;
+  padding: 0 .5em;
 }
 
 /* Screen readers only */
