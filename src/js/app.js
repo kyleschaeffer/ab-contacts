@@ -53,7 +53,7 @@ class Toggle {
 
   /**
    * Toggle the given button
-   * @param {HTMLElement} btn - Toggle button
+   * @param {HTMLElement} btn - Toggle button element
    * @return {void}
    */
   toggle (btn) {
@@ -67,11 +67,11 @@ class Toggle {
     const toggleParent = btn.closest(this.config.toggleParentSelector)
     if (!toggleParent) return
 
-    // Get toggle targets
-    const toggleTargets = toggleParent.querySelectorAll(btn.getAttribute(this.config.attr))
+    // Get button target selector
+    const targetSelector = btn.getAttribute(this.config.attr)
 
-    // Update toggle targets
-    toggleTargets.forEach(toggleTarget => {
+    // Update toggle target(s)
+    toggleParent.querySelectorAll(targetSelector).forEach(toggleTarget => {
       toggleTarget.classList[toggleState ? 'add' : 'remove'](this.config.toggleClass)
     })
   }
