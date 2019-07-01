@@ -71,6 +71,17 @@ body {
   margin: 0;
 }
 
+/* Links */
+a {
+  color: var(--c-primary);
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
 /* Headings */
 h1,
 h2,
@@ -184,14 +195,14 @@ figure {
 .media-title {
   font-size: 1.125rem;
   font-weight: var(--w-semi);
-  margin-top: 0.25rem;
+  margin-top: .25rem;
 }
 
 .media-subtitle {
   color: var(--c-darker);
-  font-size: 0.75rem;
+  font-size: .75rem;
   font-weight: var(--w-med);
-  letter-spacing: 0.025em;
+  letter-spacing: .025em;
   text-transform: uppercase;
 }
 
@@ -225,15 +236,15 @@ figure {
   font-size: 1rem;
   height: var(--btn-size);
   line-height: var(--btn-size);
-  padding: 0 0.75em;
+  padding: 0 .75em;
   transition: border-color var(--t-subtle) ease, color var(--t-subtle) ease;
 }
 
 .btn.is-sm {
   line-height: calc(var(--btn-size) / 2);
   height: calc(var(--btn-size) / 2);
-  font-size: 0.875rem;
-  padding: 0 0.5em;
+  font-size: .875rem;
+  padding: 0 .5em;
 }
 
 .btn.is-primary {
@@ -268,7 +279,7 @@ figure {
 }
 
 i + .btn-label {
-  margin-left: 0.25em;
+  margin-left: .25em;
 }
 
 /* Button groups */
@@ -277,11 +288,12 @@ i + .btn-label {
   border: 1px solid var(--c-light);
   border-radius: var(--radius);
   display: flex;
-  padding: 0 0.25em;
+  padding: 0 .25em;
 }
 
 .btn-group.is-not-outlined {
   border: 0;
+  padding: 0;
 }
 
 .btn-group + .btn-group {
@@ -292,6 +304,28 @@ i + .btn-label {
   background-color: transparent;
   border: 0;
   padding: 0 .5em;
+}
+
+/* Contact details */
+.contact-details:not(.is-active) {
+  display: none;
+}
+
+.contact-details > * {
+  margin-top: .25rem;
+}
+
+.contact-details p,
+.contact-details address {
+  font-style: normal;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.contact-details .fa-sm {
+  position: absolute;
+  top: .25em;
+  left: 0;
 }
 
 /* Screen readers only */
